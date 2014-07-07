@@ -1,0 +1,63 @@
+/*all*/
+#ui-datepicker-div select{
+	color:#06F;
+	margin:0px;
+	padding:5px;
+}
+input, select, textarea, .button{
+	text-decoration:none;
+	margin:5px;
+	padding:5px;
+	border-top:1px solid #c3c3c3;
+	border-left:1px solid #c3c3c3;
+	border-right:1px solid #c3c3c3;
+	border-bottom:1px solid #c3c3c3;	
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	background:#FFF;
+	color:#06F;
+}
+
+.button{
+	background-color: #33BB00;;
+	color: #FFFFFF;;
+	border-style: solid;;
+}
+
+textarea:hover, input:hover, select:hover, .button:hover{	
+	-moz-box-shadow: 0 0 10px #ccc;
+	-webkit-box-shadow: 0 0 10px #ccc;
+	box-shadow: 0 0 10px #ccc;
+	color:#06F;
+}
+
+textarea:focus,input:focus,select:focus, .button:focus{
+	-moz-box-shadow: 0 0 10px #06F;
+	-webkit-box-shadow: 0 0 10px #06F;
+	box-shadow: 0 0 10px #06F;
+	color:#06F;
+}
+
+/*/all*/
+.file_input_textbox{
+	float: left;
+}
+
+.file_input_div{
+	position: relative;; 
+	width: auto; 
+	height: 40px;; 
+	overflow: hidden;;
+}
+
+.file_input_hidden{
+	font-size: 45px;; 
+	position: absolute;; 
+	right: 0px;; 
+	top: 0px;; 
+	opacity: 0;
+	
+	-ms-filter: "alpha(opacity=0)";
+	-khtml-opacity: 0;
+}

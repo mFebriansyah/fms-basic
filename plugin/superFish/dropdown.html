@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/superfish.css">
+		<script type="text/javascript" src="js/jquery-1.4.js"></script>
+		<script type="text/javascript" src="js/hoverIntent.js"></script>
+		<script type="text/javascript" src="js/superfish.js"></script>
+		<script type="text/javascript">
+      $(document).ready(function(){
+			   jQuery('ul.sf-menu').superfish();
+		  });
+    </script>
+	</head>
+	  <body>
+		<ul class="sf-menu">
+			<li class="li2"><a href="#">Home</a></li>	
+			<li class="li2">
+				<a href="#">Profil</a>
+				<ul class="ul2">
+					<li class="li3"><a class="a1" href="#">Tentang Kami</a></li>
+					<li class="li3"><a class="a1" href="#">Sejarah</a>
+                    	<ul>
+                        	<li class="li3"><a class="a2" href="#">Sejarah</a></li>
+                            <li class="li3"><a class="a2" href="#">Sejarah</a></li>
+                            <li class="li3"><a class="a2" href="#">Sejarah</a></li>
+                        </ul>
+                      </li>
+					<li><a href="#" class="a1">Visi dan Misi</a></li>
+					<li><a href="#" class="a1">Struktur Organisasi</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Agenda</a></li>
+			<li>
+				<a href="#">Berita</a>
+				<ul>
+					<li><a href="#">Politik</a></li>
+					<li><a href="#">Ekonomi</a></li>
+					<li><a href="#">Olahraga</a></li>
+					<li><a href="#">Hiburan</a></li>
+				</ul>
+			</li>
+		</ul>
+	</body>
+</html>

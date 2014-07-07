@@ -1,0 +1,35 @@
+RewriteEngine on
+
+RewriteRule ^(.*)/(.*)/(.*)/params/(.*)/(.*)/(.*)/(.*)/(.*)/(.*)\.html$ $1/home.php?content=$2&subContent=$3&$4=$5&$6=$7&$8=$9 [L]
+RewriteRule ^(.*)/(.*)/(.*)/params/(.*)/(.*)/(.*)/(.*)\.html$ $1/home.php?content=$2&subContent=$3&$4=$5&$6=$7 [L]
+RewriteRule ^(.*)/(.*)/(.*)/params/(.*)/(.*)\.html$ $1/home.php?content=$2&subContent=$3&$4=$5 [L]
+
+RewriteRule ^(.*)/(.*)/(.*)/var/(.*)/(.*)/(.*)/(.*)/(.*)/(.*)\.html$ $1/home.php?content=$2&subContent=$3&$4=$5&$6=$7&$8=$9 [L]
+RewriteRule ^(.*)/(.*)/(.*)/var/(.*)/(.*)/(.*)/(.*)\.html$ $1/home.php?content=$2&subContent=$3&$4=$5&$6=$7 [L]
+RewriteRule ^(.*)/(.*)/(.*)/var/(.*)/(.*)\.html$ $1/home.php?content=$2&subContent=$3&$4=$5 [L]
+
+RewriteRule ^(.*)/(.*)/params/(.*)/(.*)/(.*)/(.*)/(.*)/(.*)\.html$ $1/home.php?content=$2&$3=$4&$5=$6&$7=$8 [L]
+RewriteRule ^(.*)/(.*)/params/(.*)/(.*)/(.*)/(.*)\.html$ $1/home.php?content=$2&$3=$4&$5=$6 [L]
+RewriteRule ^(.*)/(.*)/params/(.*)/(.*)\.html$ $1/home.php?content=$2&$3=$4 [L]
+
+RewriteRule ^(.*)/(.*)/var/(.*)/(.*)/(.*)/(.*)/(.*)/(.*)\.html$ $1/home.php?content=$2&$3=$4&$5=$6&$7=$8 [L]
+RewriteRule ^(.*)/(.*)/var/(.*)/(.*)/(.*)/(.*)\.html$ $1/home.php?content=$2&$3=$4&$5=$6 [L]
+RewriteRule ^(.*)/(.*)/var/(.*)/(.*)\.html$ $1/home.php?content=$2&$3=$4 [L]
+
+RewriteRule ^(.*)/(.*)/(.*)/id/([0-9]+)/page/([0-9]+)\.html$ $1/home.php?content=$2&subContent=$3&id=$4&page=$5 [L]
+RewriteRule ^(.*)/(.*)/(.*)/id/([0-9]+)\.html$ $1/home.php?content=$2&subContent=$3&id=$4 [L]
+RewriteRule ^(.*)/(.*)/id/([0-9]+)/page/([0-9]+)\.html$ $1/home.php?content=$2&id=$3&page=$4 [L]
+RewriteRule ^(.*)/(.*)/id/([0-9]+)\.html$ $1/home.php?content=$2&id=$3 [L]
+
+RewriteRule ^(.*)/(.*)/(.*)/search/(.*)/page/([0-9]+)\.html$ $1/home.php?content=$2&subContent=$3&search=$4&page=$5 [L]
+RewriteRule ^(.*)/(.*)/(.*)/search/(.*)\.html$ $1/home.php?content=$2&subContent=$3&search=$4 [L]
+RewriteRule ^(.*)/(.*)/search/(.*)/page/([0-9]+)\.html$ $1/home.php?content=$2&search=$3&page=$4 [L]
+RewriteRule ^(.*)/(.*)/search/(.*)\.html$ $1/home.php?content=$2&search=$3 [L]
+
+RewriteRule ^(.*)/(.*)/(.*)/page/([0-9]+)\.html$ $1/home.php?content=$2&subContent=$3&page=$4 [L]
+RewriteRule ^(.*)/(.*)/page/([0-9]+)\.html$ $1/home.php?content=$2&page=$3 [L]
+
+RewriteRule ^(.*)/(.*)/(.*)\.html$ $1/home.php?content=$2&subContent=$3 [L]
+RewriteRule ^(.*)/(.*)\.html$ $1/home.php?content=$2 [L]
+
+Options All -Indexes

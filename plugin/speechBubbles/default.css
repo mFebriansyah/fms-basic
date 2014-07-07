@@ -1,0 +1,69 @@
+.triangle-border {
+	float:left;
+	position:relative;
+	max-width:600px;
+	padding:15px;
+	color:#333;
+	background:#fff;
+	/* css3 */
+	border: 4px solid #ccc;
+	box-shadow: 1px 1px 3px #999;
+	border-radius:10px;
+}
+
+/* Variant : for left positioned triangle
+------------------------------------------ */
+
+.triangle-border.left {
+	margin-left:0px;
+}
+
+/* THE TRIANGLE
+------------------------------------------------------------------------------------------------------------------------------- */
+
+.triangle-border:before {
+	content:"";
+	position:absolute;
+	bottom:-4px; /* value = - border-top-width - border-bottom-width */
+	left:40px; /* controls horizontal position */
+    border-width:4px 4px 0;
+	border-style:solid;
+    border-color:#f0f0f0 transparent;
+    /* reduce the damage in FF3.0 */
+    display:block; 
+    width:0;
+}
+
+/* creates the smaller  triangle */
+.triangle-border:after {
+	content:"";
+	position:absolute;
+	bottom:-4px; /* value = - border-top-width - border-bottom-width */
+	left:36px; /* value = (:before left) + (:before border-left) - (:after border-left) */
+	border-width:4px 4px 0;
+	border-style:solid;
+	border-color:#fff transparent;
+    /* reduce the damage in FF3.0 */
+    display:block; 
+    width:0;
+}
+/* Variant : left
+------------------------------------------ */
+
+/* creates the larger triangle */
+.triangle-border.left:before {
+	top:50px; /* controls vertical position */
+	bottom:auto;
+	left:-34px; /* value = - border-left-width - border-right-width */
+	border-width:19px 30px 19px 0;
+	border-color:transparent #ccc;
+}
+
+/* creates the smaller  triangle */
+.triangle-border.left:after {
+	top:54px; /* value = (:before top) + (:before border-top) - (:after border-top) */
+	bottom:auto;
+	left:-26px; /* value = - border-left-width - border-right-width */
+	border-width:15px 26px 15px 0;
+	border-color:transparent #fff;
+}

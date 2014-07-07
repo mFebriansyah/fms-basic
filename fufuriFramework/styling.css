@@ -1,0 +1,65 @@
+.testimonial .gravatar{
+	padding: 4px;
+	width:80px;
+	max-width:80px;
+	background-color:#fff;
+	box-shadow: 1px 1px 3px #999;
+	overflow:hidden;
+	margin:2px;
+}
+.table{
+}
+.testimonial table{
+	width:100%;
+}
+.testimonial td{
+	padding:5px;
+}
+.testimonial .name{
+	font-style:oblique;
+}
+.line{
+	border-top : 1px dashed #dfdfdf;
+}
+.testimonial .gravatarBox{
+	text-align:left;
+	width:100px;
+	max-width:100px;
+}
+#article img{
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+#comment{
+	border-top : 1px dashed #dfdfdf;
+}
+.comment{
+	margin-top:10px;
+	margin-bottom:10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	background:url(../home/image/background.png);
+}
+#myCommentForm{
+	background:url(../home/image/background.png);
+	width:70%;
+	padding:10px;
+	border-radius:10px;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+input{
+	width:100%;
+}
+#article img{
+	max-width:70%;
+}
+.paging{
+	text-align:center;	
+}
